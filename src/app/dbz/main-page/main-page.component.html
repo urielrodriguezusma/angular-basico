@@ -1,0 +1,21 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row" *ngIf="dbService.personajes.length > 0;else nopersonajes">
+  <div class="col">
+    <app-personajes></app-personajes>
+  </div>
+</div>
+
+<ng-template #nopersonajes>
+    <div>
+     <h3>No personajes</h3>
+     </div>
+</ng-template>
+
+
+  <div class="col">
+     <app-agregar></app-agregar>
+  </div>
+
+
